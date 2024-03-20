@@ -1,6 +1,6 @@
 import './App.css';
+import EventoUACJ from './componentes/EventoContainer/EventoContainer';
 import NavBarUACJ from './componentes/NavBar';
-import EventoUACJ from './componentes/EventoContainer';
 
 import {Spacer} from "@nextui-org/react";
 
@@ -8,7 +8,8 @@ function App() {
   return (
     <div className="App">
       <NavBarUACJ></NavBarUACJ>
-      <h1>¡Proximo eventos!</h1>
+      <h1 className="text-xl font-bold" >¡Proximo eventos!</h1>
+      <Spacer y={6} />
       <div className="flex center">
         <EventoUACJ />
         <Spacer x={4} />
