@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBarUACJ from './componentes/NavBar';
+import EventoUACJ from './componentes/EventoContainer';
+
+import {Spacer} from "@nextui-org/react";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBarUACJ></NavBarUACJ>
+      <h1>¡Proximo eventos!</h1>
+      <div className="flex center">
+        <EventoUACJ />
+        <Spacer x={4} />
+        <EventoUACJ />
+        <Spacer x={4} />
+        <EventoUACJ />
+      </div>
     </div>
   );
 }
