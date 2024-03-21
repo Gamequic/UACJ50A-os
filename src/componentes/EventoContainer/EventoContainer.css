@@ -1,6 +1,5 @@
 #EventoContainer {
   overflow: hidden;
-  width: 25vw;
 }
 
 #ImageContainer {
@@ -19,7 +18,7 @@
 
 #ImageContainer h1 {
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
 }

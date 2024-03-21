@@ -1,13 +1,46 @@
 import React from "react";
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link } from "@nextui-org/react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
 import './../Fonts/fonts.css';
 
 const NavBarUACJ = () => {
   return (
     <>
-      <Navbar className="w-full h-full bg-gradient-to-r from-PANTONE293C to-zinc-400 text-primary-50">
+      <Navbar className="w-full h-full bg-gradient-to-r from-PANTONE7467C to-PANTONE293C text-primary-50">
         <NavbarBrand className="px-unit-2xl">
-          <p> Redes Sociales </p>
+          <div>
+            <Button
+              className="m-2 h-10 w-10"
+              isIconOnly
+              aria-label="Like"
+              onClick={() => {window.location.href = "https://www.facebook.com/somosuacj/"}}
+            >
+              <img src={`${process.env.PUBLIC_URL}/SocialMedia/Facebook.svg`} />
+            </Button>
+            <Button
+              className="m-2 h-10 w-10"
+              isIconOnly
+              aria-label="Like"
+              onClick={() => {window.location.href = "https://www.instagram.com/somosuacj/"}}
+            >
+              <img src={`${process.env.PUBLIC_URL}/SocialMedia/Instagram.svg`} />
+            </Button>
+            <Button
+              className="m-2 h-10 w-10"
+              isIconOnly
+              aria-label="Like"
+              onClick={() => {window.location.href = "https://twitter.com/UACJOFICIAL"}}
+            >
+              <img src={`${process.env.PUBLIC_URL}/SocialMedia/x.svg`} />
+            </Button>
+            <Button
+              className="m-2 h-10 w-10"
+              isIconOnly
+              aria-label="Like"
+              onClick={() => {window.location.href = "https://www.youtube.com/UACJTV"}}
+            >
+              <img src={`${process.env.PUBLIC_URL}/SocialMedia/YT.svg`} />
+            </Button>
+          </div>
         </NavbarBrand>
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           <NavbarItem className="px-unit-2xl">
@@ -15,7 +48,7 @@ const NavBarUACJ = () => {
           </NavbarItem>
         </NavbarContent>
       </Navbar>
-      <Navbar className="w-full h-full bg-gradient-to-r from-PANTONE7467C to-zinc-400">
+      <Navbar className="p-4 w-full h-full bg-gradient-to-r from-white to-PANTONE293C">
         <NavbarBrand className="px-unit-2xl">
           <img
             src={`${process.env.PUBLIC_URL}/logo50_color.png`}
@@ -23,7 +56,7 @@ const NavBarUACJ = () => {
             width={125}
             height={125}
           />
-          <p style={{ fontFamily: "desyrel" }} className="text-inherit font-bold text-xl">¡Hacemos historia!</p>
+          <p style={{ fontFamily: "desyrel" }} className="m-4 text-PANTONE293C text-inherit font-bold text-xl">¡Hacemos historia!</p>
         </NavbarBrand>
       </Navbar>
     </>
