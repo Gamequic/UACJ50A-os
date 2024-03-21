@@ -3,7 +3,7 @@ import { Button } from "@nextui-org/react";
 
 const FooterUACJ = () => {
   return (
-    <footer className="bg-PANTONE293C  w-full">
+    <footer className="bg-PANTONE293C w-full">
       <div className="flex justify-center items-center h-full flex-col">
         <img 
           src={`${process.env.PUBLIC_URL}/logo50_blanco.png`}
