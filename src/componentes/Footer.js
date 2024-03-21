@@ -20,7 +20,7 @@ const FooterUACJ = () => {
             aria-label="Like"
             onClick={() => {window.location.href = "https://www.facebook.com/somosuacj/"}}
           >
-            <img src={`${process.env.PUBLIC_URL}/SocialMedia/Facebook.svg`} />
+            <img src={`${process.env.PUBLIC_URL}/SocialMedia/Facebook.svg`} alt="Facebook" />
           </Button>
           <Button
             className="m-2 h-10 w-10"
@@ -28,7 +28,7 @@ const FooterUACJ = () => {
             aria-label="Like"
             onClick={() => {window.location.href = "https://www.instagram.com/somosuacj/"}}
           >
-            <img src={`${process.env.PUBLIC_URL}/SocialMedia/Instagram.svg`} />
+            <img src={`${process.env.PUBLIC_URL}/SocialMedia/Instagram.svg`} alt="Instagram" />
           </Button>
           <Button
             className="m-2 h-10 w-10"
@@ -36,7 +36,7 @@ const FooterUACJ = () => {
             aria-label="Like"
             onClick={() => {window.location.href = "https://twitter.com/UACJOFICIAL"}}
           >
-            <img src={`${process.env.PUBLIC_URL}/SocialMedia/x.svg`} />
+            <img src={`${process.env.PUBLIC_URL}/SocialMedia/x.svg`} alt="X" />
           </Button>
           <Button
             className="m-2 h-10 w-10"
@@ -44,7 +44,7 @@ const FooterUACJ = () => {
             aria-label="Like"
             onClick={() => {window.location.href = "https://www.youtube.com/UACJTV"}}
           >
-            <img src={`${process.env.PUBLIC_URL}/SocialMedia/YT.svg`} />
+            <img src={`${process.env.PUBLIC_URL}/SocialMedia/YT.svg`} alt="YouTube" />
           </Button>
         </div>
         <p className="text-white" >Copyright© 2023 | 50 Aniversario | Universidad Autónoma de Ciudad Juárez. </p>

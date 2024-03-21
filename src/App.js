@@ -35,7 +35,13 @@ function App() {
           info='Competencia de Mouseke-olimpiadas como parte de las celebraciones del 30 Aniversario del Instituto, el 06 de mayo de 2024, de 10:00 AM a 02:00 PM en el vestíbulo Y-4. Se considerarán tres competidores por equipo, inscritos en el semestre actual de licenciatura, con un representante (profesor) por equipo.'
           qr={`${process.env.PUBLIC_URL}/Photos/Ping Pong.png`}
         />
-        <EventoUACJ />
+        <EventoUACJ
+          image={`${process.env.PUBLIC_URL}/Photos/Programacion.jpg`}
+          title='Maratón de Programación y Algoritmia'
+          preview='El maratón se divide en dos categorías: Algoritmia, el 9 de abril de 2024, y Programación, el 9 y 10 de abril.'
+          info='La universidad proporcionará equipo de cómputo para la elaboración de programas, mientras que los procesos algorítmicos se realizarán a mano. Las resoluciones de los algoritmos matemáticos básicos serán revisadas por los jueces. El maratón se divide en dos categorías: Algoritmia, el 9 de abril de 2024, y Programación, el 9 y 10 de abril, simultáneamente en el Instituto de Ingeniería y Tecnología (IIT) y en Ciudad Universitaria, con un receso.'
+          qr={`${process.env.PUBLIC_URL}/Photos/Ping Pong.png`}
+        />
         <EventoUACJ />
         <EventoUACJ />
       </div>
