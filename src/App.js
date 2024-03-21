@@ -19,18 +19,21 @@ function App() {
           title='Ping pong'
           preview='Viernes 12, 19 y 26 de abril y 3 de mayo'
           info='El Instituto de Ingeniería y Tecnología de la UACJ invita a la comunidad universitaria a participar en un torneo de Ping Pong en conmemoración de 50 años de ingeniería en la institución. El evento se llevará a cabo los días viernes 12, 19 y 26 de abril y 3 de mayo en la Plaza de la Fraternidad del instituto.'
+          qr={`${process.env.PUBLIC_URL}/Photos/Ping Pong.png`}
         />
         <EventoUACJ
           image={`${process.env.PUBLIC_URL}/Photos/Futbol.png`}
           title='Torneo recreativo de futbol calle'
           preview='Viernes 12, 19 y 26 de abril y 3 de mayo.'
           info='Torneo recreativo de futbol calle mixto en conmemoración de sus 50 años de ingeniería. El evento se llevará a cabo los días viernes 12, 19 y 26 de abril y 3 de mayo en la Plaza de la Fraternidad del instituto. Se invita a formar equipos mixtos de hasta 8 integrantes, con dos jugadoras y dos jugadores en el cuadro en juego.'
+          qr={`${process.env.PUBLIC_URL}/Photos/Ping Pong.png`}
         />
         <EventoUACJ
           image={`${process.env.PUBLIC_URL}/Photos/Mouseke-olimpiadas.png`}
           title='Mouseke-olimpiadas'
           preview='06 de mayo de 2024, de 10:00 AM a 02:00 PM en el vestíbulo Y-4.'
           info='Competencia de Mouseke-olimpiadas como parte de las celebraciones del 30 Aniversario del Instituto, el 06 de mayo de 2024, de 10:00 AM a 02:00 PM en el vestíbulo Y-4. Se considerarán tres competidores por equipo, inscritos en el semestre actual de licenciatura, con un representante (profesor) por equipo.'
+          qr={`${process.env.PUBLIC_URL}/Photos/Ping Pong.png`}
         />
         <EventoUACJ />
         <EventoUACJ />
