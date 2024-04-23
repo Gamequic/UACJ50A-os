@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <BackgroundUACJ>
         <NavBarUACJ></NavBarUACJ>
-        <h1 className="text-xl font-bold text-white" >¡Proximos eventos!</h1>
+        <h1 className="text-xl font-bold text-white" >¡Próximos eventos!</h1>
         <Spacer y={6} />
         <div className="flex flex-wrap justify-center items-center">
           <EventoUACJ
