@@ -28,14 +28,6 @@ const NavBarUACJ = () => {
               className="m-2 h-10 w-10"
               isIconOnly
               aria-label="Like"
-              onClick={() => {window.location.href = "https://twitter.com/UACJOFICIAL"}}
-            >
-              <img src={`${process.env.PUBLIC_URL}/SocialMedia/x.svg`} alt="X" />
-            </Button>
-            <Button
-              className="m-2 h-10 w-10"
-              isIconOnly
-              aria-label="Like"
               onClick={() => {window.location.href = "https://www.youtube.com/UACJTV"}}
             >
               <img src={`${process.env.PUBLIC_URL}/SocialMedia/YT.svg`} alt="YouTube" />
@@ -59,7 +51,7 @@ const NavBarUACJ = () => {
           <p style={{ fontFamily: "desyrel" }} className="m-4 text-PANTONE293C text-inherit font-bold text-xl">¡Hacemos historia!</p>
         </NavbarBrand>
         <NavbarContent class="flex justify-center items-center w-screen">
-          <h1 className="text-5xl text-white">50 años de Ingeniería en la UACJ</h1>
+          <h1 className="text-4xl text-white hidden md:block">50 años de Ingeniería en la UACJ</h1>
         </NavbarContent>
       </Navbar>
     </>

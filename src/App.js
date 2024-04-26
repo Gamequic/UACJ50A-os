@@ -23,9 +23,9 @@ function App() {
           />
           <EventoUACJ
             image={`${process.env.PUBLIC_URL}/Photos/Futbol.png`}
-            title='Torneo recreativo de futbol calle'
+            title='Torneo recreativo de Fútbol calle'
             preview='Viernes 12, 19 y 26 de abril y 3 de mayo.'
-            info='Torneo recreativo de futbol calle mixto en conmemoración de sus 50 años de ingeniería. El evento se llevará a cabo los días viernes 12, 19 y 26 de abril y 3 de mayo en la Plaza de la Fraternidad del instituto. Se invita a formar equipos mixtos de hasta 8 integrantes, con dos jugadoras y dos jugadores en el cuadro en juego.'
+            info='Torneo recreativo de Fútbol calle mixto en conmemoración de sus 50 años de ingeniería. El evento se llevará a cabo los días viernes 12, 19 y 26 de abril y 3 de mayo en la Plaza de la Fraternidad del instituto. Se invita a formar equipos mixtos de hasta 8 integrantes, con dos jugadoras y dos jugadores en el cuadro en juego.'
             qr={`${process.env.PUBLIC_URL}/Photos/Ping Pong.png`}
           />
           <EventoUACJ
