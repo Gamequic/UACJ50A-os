@@ -28,14 +28,6 @@ const NavBarUACJ = () => {
               className="m-2 h-10 w-10"
               isIconOnly
               aria-label="Like"
-              onClick={() => {window.location.href = "https://twitter.com/UACJOFICIAL"}}
-            >
-              <img src={`${process.env.PUBLIC_URL}/SocialMedia/x.svg`} alt="X" />
-            </Button>
-            <Button
-              className="m-2 h-10 w-10"
-              isIconOnly
-              aria-label="Like"
               onClick={() => {window.location.href = "https://www.youtube.com/UACJTV"}}
             >
               <img src={`${process.env.PUBLIC_URL}/SocialMedia/YT.svg`} alt="YouTube" />
