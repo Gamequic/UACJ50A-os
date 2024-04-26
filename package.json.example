@@ -2,6 +2,7 @@
   "name": "uacj-50anios",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://gamequic.github.io/UACJ50A-os",
   "dependencies": {
     "@nextui-org/react": "^2.2.10",
     "@nextui-org/system": "^2.0.15",
@@ -18,14 +19,13 @@
     "serve": "^14.2.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://Gamequic.github.io/UACJ50A-os",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build -r https://<token>@github.com/Gamequic/UACJ50A-os.git"
   },
   "eslintConfig": {
     "extends": [
