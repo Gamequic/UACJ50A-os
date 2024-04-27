@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Button } from "@nextui-org/react";
 import { motion } from 'framer-motion';
-import './EventoContainer.css'
+import './EventContainer.css'
 
-const EventoUACJ = ({ title = 'Title test', preview = "Preview", info = 'info', link, qr, image = `${process.env.PUBLIC_URL}/TestPhotos/Selva.jpg` }) => {
+const EventoUACJ = ({ title = 'Title test', titleClass='text-white', preview = "Preview", info = 'info', link, qr = undefined, image = `${process.env.PUBLIC_URL}/TestPhotos/Selva.jpg` }) => {
   const [showMore, setShowMore] = useState(false);
 
   return (
@@ -17,7 +17,7 @@ const EventoUACJ = ({ title = 'Title test', preview = "Preview", info = 'info', 
     >
       <div id="ImageContainer">
         <img src={image} alt="background" />
-        <h1 className="text-white">{title}</h1>
+        <h1 className={titleClass + " text-2xl"}>{title}</h1>
       </div>
 
       <div className="px-unit-2 py-unit-2" >
@@ -29,12 +29,14 @@ const EventoUACJ = ({ title = 'Title test', preview = "Preview", info = 'info', 
             className="flex flex-col items-center justify-center"
           >
             <p className="text-black">{info}</p>
-            <img
-              src={qr}
-              alt="qr"
-              width='200px'
-              height='200px'
-            />
+              {qr ? (
+                <img
+                src={qr}
+                alt="qr"
+                width='200px'
+                height='200px'
+              />
+              ) : null }
             <Button color="primary" variant="bordered" onClick={() => {window.location.href = link}}>
               Descargar información
             </Button>
