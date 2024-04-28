@@ -1,23 +1,23 @@
 import React, { useState } from "react";
 import { Button } from "@nextui-org/react";
 import { motion } from 'framer-motion';
-import './EventContainer.css'
+import './CategoryContainer.css'
 
-const EventoUACJ = ({ title = 'Title test', titleClass='text-white', preview = "Preview", info = 'info', link, qr = undefined, image = `${process.env.PUBLIC_URL}/TestPhotos/Selva.jpg` }) => {
+const CategoryUACJ = ({ children, title, preview, image }) => {
   const [showMore, setShowMore] = useState(false);
 
   return (
     <motion.div
       id="EventoContainer"
       className="sm:w-1/2 sm:min-w-screen sm:min-w-1/2vw md:w-1/3 md:min-w-screen md:min-w-1/2vw lg:w-1/4 lg:min-w-screen lg:min-w-1/3vw bg-content4 text-primary-50 rounded-small flex-col m-3"
-      initial={{ opacity: 0 }}
+      initiaal={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ type: "spring", stiffness: 500, damping: 30 }}
     >
       <div id="ImageContainer">
         <img src={image} alt="background" />
-        <h1 className={titleClass + " text-2xl"}>{title}</h1>
+        <h1 className={"text-white text-2xl"}>{title}</h1>
       </div>
 
       <div className="px-unit-2 py-unit-2" >
@@ -28,18 +28,18 @@ const EventoUACJ = ({ title = 'Title test', titleClass='text-white', preview = "
             transition={{ duration: 0.5 }}
             className="flex flex-col items-center justify-center"
           >
-            <p className="text-black">{info}</p>
-              {qr ? (
+            { children ? children: (
+              <>
                 <img
-                src={qr}
-                alt="qr"
-                width='200px'
-                height='200px'
-              />
-              ) : null }
-            <Button color="primary" variant="bordered" onClick={() => {window.location.href = link}}>
-              Descargar información
-            </Button>
+                  src={`${process.env.PUBLIC_URL}/Photos/NoContent.png`}
+                  width={150}
+                  height={150}
+                  className="m-4"
+                  alt="No content"
+                />
+                <h1 className="text-secondary-800">No hay nada...<br/>¡Por ahora!</h1>
+              </>
+            ) }
           </motion.div>
         ) : (
           <p className="text-black">{preview}</p>
@@ -52,4 +52,4 @@ const EventoUACJ = ({ title = 'Title test', titleClass='text-white', preview = "
   )
 }
 
-export default EventoUACJ
+export default CategoryUACJ

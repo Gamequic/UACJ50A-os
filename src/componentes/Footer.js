@@ -4,9 +4,10 @@ import { Button } from "@nextui-org/react";
 const FooterUACJ = () => {
   return (
     <footer className="bg-PANTONE293C w-full">
+      <div className="m-32" />
       <div className="flex justify-center items-center h-full flex-col">
         <img 
-          src={`${process.env.PUBLIC_URL}/logo50_blanco.png`}
+          src={`${process.env.PUBLIC_URL}/Photos/Logos/Logo50UACJ/logo50_blanco.png`}
           alt="Logo"
           width={150}
           height={150}
@@ -20,7 +21,7 @@ const FooterUACJ = () => {
             aria-label="Like"
             onClick={() => {window.location.href = "https://www.facebook.com/somosuacj/"}}
           >
-            <img src={`${process.env.PUBLIC_URL}/SocialMedia/Facebook.svg`} alt="Facebook" />
+            <img src={`${process.env.PUBLIC_URL}/Photos/Logos/SocialMedia/Facebook.svg`} alt="Facebook" />
           </Button>
           <Button
             className="m-2 h-10 w-10"
@@ -28,7 +29,7 @@ const FooterUACJ = () => {
             aria-label="Like"
             onClick={() => {window.location.href = "https://www.instagram.com/somosuacj/"}}
           >
-            <img src={`${process.env.PUBLIC_URL}/SocialMedia/Instagram.svg`} alt="Instagram" />
+            <img src={`${process.env.PUBLIC_URL}/Photos/Logos/SocialMedia/Instagram.svg`} alt="Instagram" />
           </Button>
           <Button
             className="m-2 h-10 w-10"
@@ -36,10 +37,10 @@ const FooterUACJ = () => {
             aria-label="Like"
             onClick={() => {window.location.href = "https://www.youtube.com/UACJTV"}}
           >
-            <img src={`${process.env.PUBLIC_URL}/SocialMedia/YT.svg`} alt="YouTube" />
+            <img src={`${process.env.PUBLIC_URL}/Photos/Logos/SocialMedia/YT.svg`} alt="YouTube" />
           </Button>
         </div>
-        <p className="text-white" >Copyright© 2023 | 50 Aniversario | Universidad Autónoma de Ciudad Juárez. </p>
+        <p className="text-white" >Copyright© 2024 | 50 Aniversario | Universidad Autónoma de Ciudad Juárez. </p>
       </div>
     </footer>
   )

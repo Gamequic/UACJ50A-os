@@ -5,7 +5,7 @@ import './../Fonts/fonts.css';
 const NavBarUACJ = () => {
   return (
     <>
-      <Navbar className="w-full h-full bg-gradient-to-r from-PANTONE7467C to-PANTONE293C text-primary-50">
+      <Navbar className="w-full bg-gradient-to-r from-PANTONE7467C to-PANTONE293C text-primary-50">
         <NavbarBrand className="px-unit-2xl">
           <div>
             <Button
@@ -14,7 +14,7 @@ const NavBarUACJ = () => {
               aria-label="Like"
               onClick={() => {window.location.href = "https://www.facebook.com/somosuacj/"}}
             >
-              <img src={`${process.env.PUBLIC_URL}/SocialMedia/Facebook.svg`} alt="Facebook" />
+              <img src={`${process.env.PUBLIC_URL}/Photos/Logos/SocialMedia/Facebook.svg`} alt="Facebook" />
             </Button>
             <Button
               className="m-2 h-10 w-10"
@@ -22,7 +22,7 @@ const NavBarUACJ = () => {
               aria-label="Like"
               onClick={() => {window.location.href = "https://www.instagram.com/somosuacj/"}}
             >
-              <img src={`${process.env.PUBLIC_URL}/SocialMedia/Instagram.svg`} alt="Instagram" />
+              <img src={`${process.env.PUBLIC_URL}/Photos/Logos/SocialMedia/Instagram.svg`} alt="Instagram" />
             </Button>
             <Button
               className="m-2 h-10 w-10"
@@ -30,7 +30,7 @@ const NavBarUACJ = () => {
               aria-label="Like"
               onClick={() => {window.location.href = "https://www.youtube.com/UACJTV"}}
             >
-              <img src={`${process.env.PUBLIC_URL}/SocialMedia/YT.svg`} alt="YouTube" />
+              <img src={`${process.env.PUBLIC_URL}/Photos/Logos/SocialMedia/YT.svg`} alt="YouTube" />
             </Button>
           </div>
         </NavbarBrand>
@@ -40,10 +40,10 @@ const NavBarUACJ = () => {
           </NavbarItem>
         </NavbarContent>
       </Navbar>
-      <Navbar className="p-4 w-full h-full bg-gradient-to-r from-white to-PANTONE293C">
+      <Navbar className="p-4 w-full bg-gradient-to-r from-white to-PANTONE293C">
         <NavbarBrand className="px-unit-2xl">
           <img
-            src={`${process.env.PUBLIC_URL}/logo50_color.png`}
+            src={`${process.env.PUBLIC_URL}/Photos/Logos/Logo50UACJ/logo50_color.png`}
             alt="Logo"
             width={125}
             height={125}
