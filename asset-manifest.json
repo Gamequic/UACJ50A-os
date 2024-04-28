@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/UACJ50A-os/static/css/main.dea388bb.css",
+    "main.js": "/UACJ50A-os/static/js/main.92d1c786.js",
+    "static/js/453.9c21f2f3.chunk.js": "/UACJ50A-os/static/js/453.9c21f2f3.chunk.js",
+    "static/media/Noah Text Black.otf": "/UACJ50A-os/static/media/Noah Text Black.ba7c036719ba7e21d7fe.otf",
+    "static/media/desyrel.ttf": "/UACJ50A-os/static/media/desyrel.39631c7a12a241c85fef.ttf",
+    "index.html": "/UACJ50A-os/index.html",
+    "main.dea388bb.css.map": "/UACJ50A-os/static/css/main.dea388bb.css.map",
+    "main.92d1c786.js.map": "/UACJ50A-os/static/js/main.92d1c786.js.map",
+    "453.9c21f2f3.chunk.js.map": "/UACJ50A-os/static/js/453.9c21f2f3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dea388bb.css",
+    "static/js/main.92d1c786.js"
+  ]
+}
