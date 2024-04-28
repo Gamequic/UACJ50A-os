@@ -1,0 +1,7 @@
+
+.ButtonSocialMedia img {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    filter: invert(100%);
+}

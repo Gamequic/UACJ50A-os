@@ -1,37 +1,27 @@
 import React from "react";
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link } from "@nextui-org/react";
 import './../Fonts/fonts.css';
+
+import ButtonSocialMedia from "./ButtonSocialMedia/ButtonSocialMedia";
 
 const NavBarUACJ = () => {
   return (
     <>
       <Navbar className="w-full bg-gradient-to-r from-PANTONE7467C to-PANTONE293C text-primary-50">
         <NavbarBrand className="px-unit-2xl">
-          <div>
-            <Button
-              className="m-2 h-10 w-10"
-              isIconOnly
-              aria-label="Like"
-              onClick={() => {window.location.href = "https://www.facebook.com/somosuacj/"}}
-            >
-              <img src={`${process.env.PUBLIC_URL}/Photos/Logos/SocialMedia/Facebook.svg`} alt="Facebook" />
-            </Button>
-            <Button
-              className="m-2 h-10 w-10"
-              isIconOnly
-              aria-label="Like"
-              onClick={() => {window.location.href = "https://www.instagram.com/somosuacj/"}}
-            >
-              <img src={`${process.env.PUBLIC_URL}/Photos/Logos/SocialMedia/Instagram.svg`} alt="Instagram" />
-            </Button>
-            <Button
-              className="m-2 h-10 w-10"
-              isIconOnly
-              aria-label="Like"
-              onClick={() => {window.location.href = "https://www.youtube.com/UACJTV"}}
-            >
-              <img src={`${process.env.PUBLIC_URL}/Photos/Logos/SocialMedia/YT.svg`} alt="YouTube" />
-            </Button>
+          <div className="flex">
+            <ButtonSocialMedia
+              img={`${process.env.PUBLIC_URL}/Photos/Logos/SocialMedia/Facebook.svg`}
+              link={'https://www.facebook.com/somosuacj/'}
+            />
+            <ButtonSocialMedia
+              img={`${process.env.PUBLIC_URL}/Photos/Logos/SocialMedia/Instagram.svg`}
+              link={'https://www.instagram.com/somosuacj/'}
+            />
+            <ButtonSocialMedia
+              img={`${process.env.PUBLIC_URL}/Photos/Logos/SocialMedia/YT.svg`}
+              link={'https://www.youtube.com/UACJTV'}
+            />
           </div>
         </NavbarBrand>
         <NavbarContent className="hidden sm:flex gap-4" justify="center">

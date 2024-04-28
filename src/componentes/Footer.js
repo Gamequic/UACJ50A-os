@@ -1,5 +1,6 @@
 import React from "react";
-import { Button } from "@nextui-org/react";
+
+import ButtonSocialMedia from "./ButtonSocialMedia/ButtonSocialMedia";
 
 const FooterUACJ = () => {
   return (
@@ -14,32 +15,20 @@ const FooterUACJ = () => {
           className="m-4"
         />
         <p style={{ fontFamily: "desyrel" }} className="text-white text-inherit font-bold text-3xl">¡Hacemos historia!</p>
-        <div>
-          <Button
-            className="m-2 h-10 w-10"
-            isIconOnly
-            aria-label="Like"
-            onClick={() => {window.location.href = "https://www.facebook.com/somosuacj/"}}
-          >
-            <img src={`${process.env.PUBLIC_URL}/Photos/Logos/SocialMedia/Facebook.svg`} alt="Facebook" />
-          </Button>
-          <Button
-            className="m-2 h-10 w-10"
-            isIconOnly
-            aria-label="Like"
-            onClick={() => {window.location.href = "https://www.instagram.com/somosuacj/"}}
-          >
-            <img src={`${process.env.PUBLIC_URL}/Photos/Logos/SocialMedia/Instagram.svg`} alt="Instagram" />
-          </Button>
-          <Button
-            className="m-2 h-10 w-10"
-            isIconOnly
-            aria-label="Like"
-            onClick={() => {window.location.href = "https://www.youtube.com/UACJTV"}}
-          >
-            <img src={`${process.env.PUBLIC_URL}/Photos/Logos/SocialMedia/YT.svg`} alt="YouTube" />
-          </Button>
-        </div>
+        <div className="flex">
+            <ButtonSocialMedia
+              img={`${process.env.PUBLIC_URL}/Photos/Logos/SocialMedia/Facebook.svg`}
+              link={'https://www.facebook.com/somosuacj/'}
+            />
+            <ButtonSocialMedia
+              img={`${process.env.PUBLIC_URL}/Photos/Logos/SocialMedia/Instagram.svg`}
+              link={'https://www.instagram.com/somosuacj/'}
+            />
+            <ButtonSocialMedia
+              img={`${process.env.PUBLIC_URL}/Photos/Logos/SocialMedia/YT.svg`}
+              link={'https://www.youtube.com/UACJTV'}
+            />
+          </div>
         <p className="text-white" >Copyright© 2024 | 50 Aniversario | Universidad Autónoma de Ciudad Juárez. </p>
       </div>
     </footer>
