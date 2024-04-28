@@ -5,11 +5,11 @@ const BackgroundUACJ = ({ children }) => {
     <div className="relative min-h-screen">
       <img
         alt="Background"
-        src={`${process.env.PUBLIC_URL}/Background.jpg`}
+        src={`${process.env.PUBLIC_URL}/Photos/Background.jpg`}
         className="fixed inset-0 w-full h-full object-cover"
       />
       <div className="fixed inset-0 bg-black opacity-50"></div>
-      <div className="relative z-10">{children}</div>
+      <div className="relative z-10 h-screen">{children}</div>
     </div>
   );
 };
